@@ -8,6 +8,7 @@ RUN curl -fsSL -o vanilla.zip \
  && rm -rf /app \
  && unzip vanilla.zip -d /usr/src/ \
  && mv /usr/src/vanilla-${VANILLA_VERSION} /app \
+ && mv /app/.htaccess.dist /app/.htaccess \
  && rm vanilla.zip
  RUN chown -R "$APPLICATION_USER":"$APPLICATION_GROUP" /app
 
