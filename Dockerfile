@@ -1,6 +1,6 @@
 FROM webdevops/php-apache:7.2
 
-ENV VANILLA_VERSION 2.8.3
+ENV VANILLA_VERSION 3.3
 ENV WEB_DOCUMENT_ROOT /app
 
 RUN curl -fsSL -o vanilla.zip \
